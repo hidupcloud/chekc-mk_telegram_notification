@@ -1,0 +1,37 @@
+#!/bin/bash
+# encoding: utf-8
+# Telegram group
+
+bot_id="000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+chat_id=$NOTIFY_PARAMETER_1
+
+[[ -z $NOTIFY_HOSTALIAS ]] && host=$NOTIFY_HOSTNAME || host="$NOTIFY_HOSTALIAS [$NOTIFY_HOSTNAME]"
+
+if  [[ $NOTIFY_WHAT = "SERVICE" ]]
+then
+
+[[ $NOTIFY_SERVICESTATE = "OK" ]] && smail="RECOVERY!!! 😀" || smail="PROBLEM!!! 🔔"
+
+text="
+SERVICE $smail
+$host
+$NOTIFY_SERVICEDESC
+$NOTIFY_SERVICESTATE
+$NOTIFY_SERVICEOUTPUT
+$NOTIFY_SHORTDATETIME
+"
+
+else
+
+[[ $NOTIFY_HOSTSTATE = "UP" ]] && smail="RECOVERY!!! 😀" || smail="PROBLEM!!! 🔔"
+
+text="
+HOST $smail
+$host
+$NOTIFY_HOSTSTATE
+$NOTIFY_HOSTOUTPUT
+"
+
+fi
+
+curl -s -X POST https://api.telegram.org/bot${bot_id}/sendMessage -d text="$text" -d chat_id="$chat_id"
