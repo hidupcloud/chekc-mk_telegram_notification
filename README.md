@@ -6,6 +6,7 @@ Get a telegram boot
 
 1. Talk with @botfather
 
+```
 @You:
   /newbot
 @BotFather
@@ -23,6 +24,7 @@ Use this token to access the HTTP API:
 000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 For a description of the Bot API, see this page: https://core.telegram.org/bots/api
+```
 
 2. Edit the telegram script and change your token
 
@@ -34,13 +36,13 @@ bot_id="000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 4. Get your convestation id.
 
-* Execute this command:
+4.1 Execute this command:
 
 ```bash
 curl -s -X POST https://api.telegram.org/bot000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/getUpdates | jq .
 ```
 
-* Response
+4.2 Response
 
 ```json
 {
