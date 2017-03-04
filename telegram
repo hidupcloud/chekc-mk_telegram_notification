@@ -10,7 +10,7 @@ chat_id=$NOTIFY_PARAMETER_1
 if  [[ $NOTIFY_WHAT = "SERVICE" ]]
 then
 
-[[ $NOTIFY_SERVICESTATE = "OK" ]] && smail="RECOVERY!!! 😀" || smail="PROBLEM!!! 🔔"
+[[ $NOTIFY_SERVICESTATE = "OK" ]] && smail="RECOVERY!!! 😀" || smail="PROBLEM!!! 🔔🔔🔔"
 
 text="
 SERVICE $smail
@@ -23,7 +23,7 @@ $NOTIFY_SHORTDATETIME
 
 else
 
-[[ $NOTIFY_HOSTSTATE = "UP" ]] && smail="RECOVERY!!! 😀" || smail="PROBLEM!!! 🔔"
+[[ $NOTIFY_HOSTSTATE = "UP" ]] && smail="RECOVERY!!! 😀" || smail="PROBLEM!!! 🔔🔔🔔"
 
 text="
 HOST $smail
