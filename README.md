@@ -85,4 +85,4 @@ Thaks
 About
 ===
 
-Bau Mesa <juan.mesa@hidup.io>
+Bau Mesa [https://github.com/hidupcloud](https://github.com/hidupcloud)
