@@ -4,7 +4,7 @@ Telegram flexible notifications script for check_mk
 Get a telegram boot
 ===
 
-1. Talk with @botfather
+* Talk with @botfather
 
 ```
 @You:
@@ -26,23 +26,23 @@ Use this token to access the HTTP API:
 For a description of the Bot API, see this page: https://core.telegram.org/bots/api
 ```
 
-2. Edit the telegram script and change your token
+* Edit the telegram script and change your token
 
 ```bash
 bot_id="000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
-3. Now you can talk with @mynotificationbot or add to any group
+* Now you can talk with @mynotificationbot or add to any group
 
-4. Get your convestation id.
+* Get your convestation id.
 
-4.1 Execute this command:
+* Execute this command:
 
 ```bash
 curl -s -X POST https://api.telegram.org/bot000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/getUpdates | jq .
 ```
 
-4.2 Response
+* Response
 
 ```json
 {
@@ -81,3 +81,8 @@ Thaks
 ===
 
 ¡Ese torres!
+
+About
+===
+
+Bau Mesa <juan.mesa@hidup.io>
