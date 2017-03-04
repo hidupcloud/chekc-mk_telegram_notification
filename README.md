@@ -77,7 +77,7 @@ Use this guide [Mathias Kettner - Flexible notifications doc] (https://mathias-k
 
 * Enjoy!
 
-Thaks
+Thanks
 ===
 
 ¡Ese torres!
