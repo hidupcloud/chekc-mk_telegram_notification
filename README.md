@@ -71,11 +71,11 @@ curl -s -X POST https://api.telegram.org/bot000000000:xxxxxxxxxxxxxxxxxxxxxxxxxx
 }
 ```
 
-5. Configure your check_mk flexible notifications
+* Configure your check_mk flexible notifications
 
 Use this guide [Mathias Kettner - Flexible notifications doc] (https://mathias-kettner.de/checkmk_flexible_notifications.html), and add your chat_id (-999999999) like the first plugin argument.
 
-6. Enjoy!
+* Enjoy!
 
 Thaks
 ===
