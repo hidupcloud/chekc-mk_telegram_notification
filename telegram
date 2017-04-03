@@ -2,8 +2,8 @@
 # encoding: utf-8
 # Telegram group
 
-bot_id="000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-chat_id=$NOTIFY_PARAMETER_1
+bot_id="bot{$NOTIFY_PARAMETER_1}"
+chat_id=$NOTIFY_PARAMETER_2
 
 [[ -z $NOTIFY_HOSTALIAS ]] && host=$NOTIFY_HOSTNAME || host="$NOTIFY_HOSTALIAS [$NOTIFY_HOSTNAME]"
 
@@ -34,4 +34,4 @@ $NOTIFY_HOSTOUTPUT
 
 fi
 
-curl -s -X POST https://api.telegram.org/bot${bot_id}/sendMessage -d text="$text" -d chat_id="$chat_id"
+curl -s -X POST https://api.telegram.org/${bot_id}/sendMessage -d text="$text" -d chat_id="$chat_id"

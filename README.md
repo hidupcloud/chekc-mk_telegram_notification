@@ -26,12 +26,6 @@ Use this token to access the HTTP API:
 For a description of the Bot API, see this page: https://core.telegram.org/bots/api
 ```
 
-* Edit the telegram script and change your token
-
-```bash
-bot_id="000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-```
-
 * Now you can talk with @mynotificationbot or add to any group
 
 * Get your convestation id.
@@ -73,7 +67,7 @@ curl -s -X POST https://api.telegram.org/bot000000000:xxxxxxxxxxxxxxxxxxxxxxxxxx
 
 * Configure your check_mk flexible notifications
 
-Use this guide [Mathias Kettner - Flexible notifications doc] (https://mathias-kettner.de/checkmk_flexible_notifications.html), and add your chat_id (-999999999) like the first plugin argument.
+Use this guide [Mathias Kettner - Flexible notifications doc] (https://mathias-kettner.de/checkmk_flexible_notifications.html), and add your bot token (000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) like the first plugin argument and chat_id (-999999999) like the second.
 
 * Enjoy!
 
